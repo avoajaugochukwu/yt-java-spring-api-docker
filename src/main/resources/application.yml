@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: author-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/author
+    username: postgres
+    password: password
+  jpa:
+    defer-datasource-initialization: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 6000

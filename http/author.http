@@ -1,0 +1,25 @@
+### Create author 1
+POST http://localhost:6000/api/v1/author
+Content-Type: application/json
+
+{
+  "name": "Richard Feimann",
+  "email": "richardFeimann@gmail.com"
+}
+
+### Create author 2
+POST http://localhost:6000/api/v1/author
+Content-Type: application/json
+
+{
+  "name": "Zap Braniggan",
+  "email": "zapbraniggan@gmail.com"
+}
+
+### Get all authors
+GET http://localhost:6000/api/v1/author
+Content-Type: application/json
+
+### Get all author by id
+GET http://localhost:6000/api/v1/author/1
+Content-Type: application/json

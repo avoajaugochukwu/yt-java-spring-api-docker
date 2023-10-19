@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  author-postgres:
+    image: postgres:12.2-alpine
+    container_name: author-postgres
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=author
+    ports:
+      - "5432:5432"
+    volumes:
+      - author-postgres:/var/lib/postgresql/data
+volumes:
+  author-postgres:
